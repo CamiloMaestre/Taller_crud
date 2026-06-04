@@ -53,14 +53,14 @@ public class AnimalsFormView {
              Animals a = new Animals(0, name, type, edad);
              animalServices.saveAnimal(a);
              new Alert(Alert.AlertType.INFORMATION, "Se ha creado Correctamente", ButtonType.OK).showAndWait();
-             onSaved.run();   // ← refresca la tabla en MainView
+             onSaved.run();   // ← refresh the table on MainView
              stage.close();
          });
 
          //gridpane
          GridPane grid = new GridPane();
-         grid.setHgap(10);   // espacio horizontal entre celdas
-         grid.setVgap(12);   // espacio vertical entre celdas
+         grid.setHgap(10);   // horizontal space between cells
+         grid.setVgap(12);   // vertical space between cells
          grid.setPadding(new Insets(20));
 
          grid.add(new Label("Nombre:"), 0, 0);  // columna 0, fila 0

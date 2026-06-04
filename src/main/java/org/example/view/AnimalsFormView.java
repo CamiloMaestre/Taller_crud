@@ -63,16 +63,16 @@ public class AnimalsFormView {
          grid.setVgap(12);   // vertical space between cells
          grid.setPadding(new Insets(20));
 
-         grid.add(new Label("Nombre:"), 0, 0);  // columna 0, fila 0
-         grid.add(txtName,                 1, 0);  // columna 1, fila 0
+         grid.add(new Label("Nombre:"), 0, 0);  // column 0, line 0
+         grid.add(txtName,                 1, 0);  // column 1, line 0
          grid.add(new Label("Edad:"),   0, 1);
          grid.add(txtAge,                  1, 1);
          grid.add(new Label("Tipo:"),   0, 2);
          grid.add(txtType,                 1, 2);
          grid.add(btnSave,                 0, 3, 3, 2);  // col 0, fila 3, colspan 3, rowspan 2
 
-         ColumnConstraints col1 = new ColumnConstraints(80);   // etiquetas
-         ColumnConstraints col2 = new ColumnConstraints(200);  // campos
+         ColumnConstraints col1 = new ColumnConstraints(80);   // labels
+         ColumnConstraints col2 = new ColumnConstraints(200);  // camps
          grid.getColumnConstraints().addAll(col1, col2);
 
          stage.setScene(new Scene(grid));

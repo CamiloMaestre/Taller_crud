@@ -4,12 +4,14 @@ import org.example.entity.Animals;
 
 import java.util.ArrayList;
 
-public class AnimalsRespository {
+public class AnimalsRepository {
 
     private ArrayList<Animals> list = new ArrayList<>();
+    private int nextId = 1;
 
     //save animal
     public void save(Animals a){
+        a.setId(nextId++);
         list.add(a);
     }
 
